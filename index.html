@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>$KING</title>
+    <style>
+      .img_area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media screen and (max-width: 768px) {
+        .img_area {
+          display: block;
+          text-align: center;
+        }
+        .img_sp {
+          margin-top: 35px;
+        }
+      }
+    </style>
   </head>
   <body>
     <main style="padding: 80px 0">
@@ -15,7 +31,7 @@
             ><img src="/x.svg" alt=""
           /></a>
           <a href="" target="_blank"
-            ><img src="dexscreener.png" style="width: 100%" alt=""
+            ><img src="dexscreener.png" style="width: 200px" alt=""
           /></a>
           <a href="https://t.me/kingsolanaportal" target="_blank"
             ><img src="telegram.svg" alt=""
@@ -32,9 +48,14 @@
       >
         $KING
       </h2>
-      <div style="display: flex; align-items: center; justify-content: center">
+      <div class="img_area">
         <video src="/cat.mp4" style="width: 500px; height: 450px"></video>
-        <img src="/logo.jpg" style="width: 400px; height: 450px" alt="" />
+        <img
+          src="/logo.jpg"
+          style="width: 400px; height: 450px"
+          class="img_sp"
+          alt=""
+        />
       </div>
     </main>
   </body>
